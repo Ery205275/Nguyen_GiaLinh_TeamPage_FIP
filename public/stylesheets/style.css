@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+/* General Styles */
+body {
+  font-family: 'Paprika', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #1612C4;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+header nav {
+  display: inline-block;
+  margin: auto;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin: auto;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 10px;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  
+  font-size: 18px;
+}
+
+
+.team-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.team-member {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 4rem 1rem;
+  flex-direction: row;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.team-image{
+  position: relative;
+  margin: 2rem;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.team-image img {
+  width: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+ 
+}
+
+.team-member-name {
+  font-size: 2rem;
+  margin-bottom:1rem;
+
+}
+
+.team-member-bio {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.social-links a {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.skills h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills ul {
+  list-style: none;
+  font-size: 1rem;
+}
+
+/* Media Queries to make it responsive*/
+@media only screen and (max-width: 768px) {
+
+  body {
+    font-family: 'Paprika', cursive;
+    margin: auto;
+    padding: 1rem;
+  }
+  .team-member  {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      position: relative;
+      margin-right: 5px;
+      align-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      justify-content: space-evenly;
+     
+  }
+}
+
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  header nav ul li {
+    margin: 10px 0;
+    
+  }
+  .team-member  {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: relative;
+    margin-right: 5px;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+}
